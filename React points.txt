@@ -1,0 +1,4 @@
+React points
+=> We do not use 'a' tag for link because it reloads whole page. If we want to reload whole page than why we use React. Instead we use Link tag.
+=> is active function is used to get information to navlink that the page in which you are is active or not
+=> Loader method is used to get the data even faster than useEffect it minimize the lag
