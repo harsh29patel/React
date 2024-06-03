@@ -14,3 +14,7 @@ and export it.
 3.) Return the children and in <> </> write UserContext.Provider. Create a state so that UserContext.Provider have something to return 
 4.) In opening tag of UserContext.Provider write value = {{the state you have declared}}
 5.) In App.jsx return <UserContextProvider>. Finished
+
+SECOND METHOD
+1.)create folder named context in src and file named theme.js in it. Theme because of the project we are working
+2.) export method and in refrence write object. Export themeProvider. You can create customize hook also
