@@ -11,8 +11,6 @@ node_modules
 dist
 dist-ssr
 *.local
-react points.txt
-
 
 # Editor directories and files
 .vscode/*

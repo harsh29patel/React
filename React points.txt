@@ -2,3 +2,15 @@ React points
 => We do not use 'a' tag for link because it reloads whole page. If we want to reload whole page than why we use React. Instead we use Link tag.
 => is active function is used to get information to navlink that the page in which you are is active or not
 => Loader method is used to get the data even faster than useEffect it minimize the lag
+=> Context API see video for understanding
+=> Steps for Context API
+
+1.) Create folder named Context in src and in Context create new file named UserContext in that create a function for React.createContext() 
+and export it.
+=> Context gives you a provider. Eventually UserContext is a provider in <></> write UserContext
+
+2.) Create a new file in Context.js named UserContextProvider.jsx . Import UserContext in it. Create method name UserContextProvider 
+and export it.
+3.) Return the children and in <> </> write UserContext.Provider. Create a state so that UserContext.Provider have something to return 
+4.) In opening tag of UserContext.Provider write value = {{the state you have declared}}
+5.) In App.jsx return <UserContextProvider>. Finished
