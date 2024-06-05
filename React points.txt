@@ -18,3 +18,4 @@ and export it.
 SECOND METHOD
 1.)create folder named context in src and file named theme.js in it. Theme because of the project we are working
 2.) export method and in refrence write object. Export themeProvider. You can create customize hook also
+=> When you write useContext always return the context in bracket
