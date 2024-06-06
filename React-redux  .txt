@@ -1,0 +1,40 @@
+React-redux  
+
+Install it from redux toolkit both installation on site
+
+1.) Create a folder in src named app and create store.js
+2.) import configureStore from @redux/toolkit
+3.)Export the configureStotre by storing it in method
+4.) Create reducer we called it slices.  Create a folder in src 	  named features in it create folder named Todo and in it create todoSlice.js. import createSlice form redux/toolkit. also nanoid it generated unique id
+5.)const initialState it can be array or objects we create object so we can handle multiple things.
+create an object you want here it is todos
+6.) To create Slice Export todosSlice= createSlice({}) there are name of slices write name property and whatever name you want and every slices have initialstate
+write it below name.
+write reducer:{} it includes properties and function eg., property is addTodo:()=>{}
+and removeTodo:()=>{} 
+when you use addTodo you  (in every properties )get state and action write it in addTodo(here)
+than write the thing in initial state in addTodo  id:nanoid text:action.payload
+To update state.todos.push(todo)
+removeTodos:(s,a)=>{
+state.todos=state.todos.filter(logic)
+}
+7.) export reducers functionality = todoSlice.actions "individually property"
+    export todoSlice.reducer 
+8.) In store import todoReducer  <= "todoSlice.reducer">
+In configureStore{
+reducer:todoReducer}	
+9.)in src create components in it add file AddTodo.jsx and Todo.jsx
+10.) In	 addTodo write  in function 
+create useState input ,setInput
+import useDispatch and in function write const dispatch = useDispatch()
+than create addTodo functionality basically logic
+Dispatch use reducer to change values in store write dispatch()
+Import addTodo and wtire in dispatch(addtodo(input)) 
+to clean the form use setInput('')
+12.) In Todo.jsx import useSelector and useDispatch also import removeTodo
+To get todos write useSelctor(state=>state.todos) hold it in variable named todos write it in function
+In return write {todos.map}function
+in button write onclick write callback and write dispatch(removeTodo(todo.id)
+13.)In app.jsx add component AddTodo and Todo
+14.) In main.jsx import provider and store
+in React.strict with <provider></provider> In context API we used to pass value but in this we pass store  
